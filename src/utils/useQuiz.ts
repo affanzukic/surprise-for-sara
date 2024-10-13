@@ -1,20 +1,19 @@
 import { useCallback, useMemo, useState } from "react";
 
-import q1t from "@/assets/questions/q1-t.jpg";
 import q1f from "@/assets/questions/q1-f.jpeg";
-import q2t from "@/assets/questions/q2-t.png";
+import q1t from "@/assets/questions/q1-t.jpg";
 import q2f from "@/assets/questions/q2-f.png";
-import q3t from "@/assets/questions/q3-t.jpeg";
+import q2t from "@/assets/questions/q2-t.png";
 import q3f from "@/assets/questions/q3-f.png";
-import q4t from "@/assets/questions/q4-t.png";
+import q3t from "@/assets/questions/q3-t.jpeg";
 import q4f from "@/assets/questions/q4-f.jpg";
-import q5t from "@/assets/questions/q5-t.png";
+import q4t from "@/assets/questions/q4-t.png";
 import q5f from "@/assets/questions/q5-f.jpg";
-import q6t from "@/assets/questions/q6-t.png";
+import q5t from "@/assets/questions/q5-t.png";
 import q6f from "@/assets/questions/q6-f.jpg";
-import q7t from "@/assets/questions/q7-t.jpg";
+import q6t from "@/assets/questions/q6-t.png";
 import q7f from "@/assets/questions/q7-f.jpg";
-
+import q7t from "@/assets/questions/q7-t.jpg";
 
 export type TQuizOption = {
   image: unknown;

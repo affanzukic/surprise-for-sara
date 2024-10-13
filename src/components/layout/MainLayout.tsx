@@ -1,11 +1,11 @@
 import { Modal, Tooltip } from "flowbite-react";
+import { Figtree } from "next/font/google";
 import Head from "next/head";
 import Image from "next/image";
 import { PropsWithChildren, useState } from "react";
 
 import img from "@/assets/us1.jpeg";
 import { useEmojis, useModalText } from "@/utils";
-import { Figtree } from "next/font/google";
 
 const modalText1 = [
   "Anyways, nasla si hidden menu, svaka cast srce! (Osim ako ti ja vec nisam rekao da postoji...)",
@@ -13,7 +13,10 @@ const modalText1 = [
   "And... ovo mi je nasa najdraza slika do sad :)",
 ];
 
-const figtree = Figtree({ weight: "variable", subsets: ["latin", "latin-ext"] })
+const figtree = Figtree({
+  weight: "variable",
+  subsets: ["latin", "latin-ext"],
+});
 
 const MainLayout = ({ children }: PropsWithChildren) => {
   const [modal, setModal] = useState(false);
@@ -32,10 +35,14 @@ const MainLayout = ({ children }: PropsWithChildren) => {
         <link rel="icon" href="/real_favicon/favicon.ico" sizes="any" />
       </Head>
       <div className="relative h-screen w-full overflow-hidden p-2">
-        <div className={`absolute flex size-full flex-col justify-center align-middle ${figtree.className}`}>
+        <div
+          className={`absolute flex size-full flex-col justify-center align-middle ${figtree.className}`}
+        >
           {children}
           <Modal show={modal} onClose={handleClose}>
-            <Modal.Header className="bg-modalBg">How did you find me?</Modal.Header>
+            <Modal.Header className="bg-modalBg">
+              How did you find me?
+            </Modal.Header>
             <Modal.Body className="bg-modalBg">
               <div className="space-y-6 pb-2">{text1}</div>
               <div className="space-y-6">

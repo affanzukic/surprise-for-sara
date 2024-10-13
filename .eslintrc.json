@@ -68,6 +68,8 @@
         "react/no-unstable-nested-components": "off",
         "react/no-array-index-key": "off",
         "react/display-name": "off",
+        "react/no-unescaped-entities": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
         "@typescript-eslint/comma-dangle": "off",
         "@typescript-eslint/consistent-type-imports": "off",
         "no-restricted-syntax": [

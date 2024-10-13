@@ -47,11 +47,12 @@ export const QuizQuestion = memo<TQuizQuestion>(
       <>
         {/* eslint-disable-next-line */}
             <div
-          className={`bg-${background} flex size-80 cursor-pointer flex-col justify-center gap-4 rounded align-middle transition`}
+          style={{ backgroundColor: `var(--${background})` }}
+          className="flex size-80 cursor-pointer flex-col justify-center gap-4 rounded align-middle transition"
           onClick={handleClick}
         >
           <Image
-            src={question.image as string}
+            src={question.image as unknown as string}
             alt="image"
             width={200}
             height={200}
@@ -65,7 +66,7 @@ export const QuizQuestion = memo<TQuizQuestion>(
           <Modal.Header>...</Modal.Header>
           <Modal.Body className="flex justify-center align-middle">
             <Image
-              src={kanyeFace as string}
+              src={kanyeFace as unknown as string}
               alt="kanye"
               className="flex self-center"
             />
