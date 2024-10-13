@@ -3,15 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #FFE3E3;
+  --foreground: #e198ef;
+  --buttonOk: #fdcece;
+  --buttonCancel: #e1a4a4;
+  --modalBg: #fff2f2;
+  --correct: #C9E9D2;
+  --incorrect: #D91656;
 }
 
 body {
@@ -25,3 +23,4 @@ body {
     text-wrap: balance;
   }
 }
+
