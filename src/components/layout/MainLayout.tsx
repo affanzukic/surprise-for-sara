@@ -46,11 +46,7 @@ const MainLayout = ({ children }: PropsWithChildren) => {
             <Modal.Body className="bg-modalBg">
               <div className="space-y-6 pb-2">{text1}</div>
               <div className="space-y-6">
-                <Image
-                  src={img}
-                  alt="us"
-                  style={{ transform: "rotate(180deg)" }}
-                />
+                <Image src={img} alt="us" />
               </div>
               <div className="space-y-6 pt-2">{text2}</div>
             </Modal.Body>
