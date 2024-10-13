@@ -29,6 +29,7 @@ const MainLayout = ({ children }: PropsWithChildren) => {
     <>
       <Head>
         <title>Hi, Sweetie!</title>
+        <link rel="icon" href="/real_favicon/favicon.ico" sizes="any" />
       </Head>
       <div className="relative h-screen w-full overflow-hidden p-2">
         <div className={`absolute flex size-full flex-col justify-center align-middle ${figtree.className}`}>
